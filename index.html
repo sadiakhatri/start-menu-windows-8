@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/04a0c2af21.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif; 
+        }
+        @media screen and (max-width:480px){
+            .container{
+                grid-template-columns: auto;
+            }
+        }
+        @media screen and (min-width:760px) {
+            .container{
+                grid-template-columns: auto auto;
+            }
+        }
+        
+        @media screen and (min-width:1200px) {
+            .container{
+                grid-template-columns: auto auto auto;
+            }
+        }
+    
+        .container{
+            margin: auto;
+           background-color: rgb(10, 10, 70);
+           height: 100vh;
+           padding: 10px;
+           max-width: 1250px;
+           text-align: center;
+           display: grid;
+           grid-template-columns: auto auto auto;
+           grid-template-rows: auto auto auto;
+           grid-gap: 15px;
+        }
+
+       .box1{
+        background-color: rgb(44, 194, 194);
+        height: 200px;
+        width: 400px;
+       }
+       h1{
+        text-align: left;
+        color: wheat;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+       }
+       p{
+        text-align: left;
+        color: wheat;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+       }
+       h5{
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 75px;
+        color: wheat;
+       }
+
+       .box2{
+        background-color: rgba(226, 50, 226, 0.39);
+        height: 200px;
+        width: 400px;
+    }
+    .para1{
+        width: 180px;
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .time{
+        font-size: 20px;
+        margin-left: 20px; 
+    }
+    .fa-calendar-days{
+        color: wheat;
+        font-size: 30px;
+        margin-left: -300px;
+        margin-top: 38px;
+    }
+    .number{
+        font-size: 150px;
+        margin-top: -200px;
+        margin-left: 230px;
+    }
+    .mon{
+        color: wheat;
+        margin-top: -30px;
+        margin-left: 250px;
+    }
+    .box3{
+        height: 200px;
+        width: 200px; 
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* background-color: aqua; */
+   
+    }
+    .paraP{
+        /* border: 2px solid red; */
+        /* padding: 10px 5px; */
+        width: 170px;
+        grid-row: 1 / span 2;
+        grid-column: 1;
+        background-image: url(waterfall.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .para3{
+        background-color: rgb(253, 7, 7);
+        width: 90px;
+        height: 90px;
+    }
+    .fa-circle-play{
+        font-size: 30px;
+        border: 5px solid white;
+        padding: 5px 5px;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: white;
+    }
+    .headPhone{
+        background-color: orangered;
+        width: 90px;
+        height: 90px;
+    }
+    .fa-headphones{
+        font-size: 40px;
+        padding: 5px 5px;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: white;
+    }
+    .gamePad{
+        background-color: green;
+        width: 90px;
+        height: 90px;
+    }
+    .fa-gamepad{
+        font-size: 40px;
+        padding: 5px 5px;
+        margin-top: 20px;
+        margin-left: 15px;
+        color: white;
+    }
+    .camera{
+        background-color: purple;
+        width: 90px;
+        height: 90px;
+    }
+    .fa-camera{
+        font-size: 40px;
+        padding: 5px 5px;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: white;
+    }
+     .box4{
+        height: 200px;
+        width: 400px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* background-color: aqua; */
+      
+    }
+    .para{
+        /* border: 2px solid red; */
+        /* padding: 10px 5px; */
+        width: 180px;
+        grid-row: 1 / span 2;
+        grid-column: 1;
+        background-image: url(ik\ pic.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .parab{
+        background-image: url(baba\ pic.jpg);
+        background-size: 100% 100%;
+        /* background-color: rgb(253, 7, 7); */
+        width: 90px;
+        height: 90px;
+    }
+    .headPhone1{
+        background-image: url(baby\ pic.jpg);
+        background-size: 100% 100%;
+        width: 90px;
+        height: 90px;
+    }
+    .gamePad1{
+        background-image: url(girl\ pic.jpg);
+        background-size: 100% 100%;
+        /* background-color: green; */
+        width: 90px;
+        height: 90px;
+    }
+   
+    .camera1{
+        background-image: url(boy\ pic.jpg);
+        background-size: 100% 100%;
+        /* background-color: purple; */
+        width: 90px;
+        height: 90px;
+    }
+ 
+    .box5{
+        background-image: url(view\ pic.jpg);
+        background-size: 100% 100%;
+        height: 400px;
+        width: 400px;
+        grid-row: 2 /  4 ;
+        grid-column: 2 ;
+           
+    }
+    .degree{
+        font-size: 140px;
+        margin-top: -30px;
+        margin-left: 10px;
+    }
+    .sunny{
+        margin-top: -30px;
+        font-size: 40px;
+        font-weight: 100;
+    }
+    .box6{
+        height: 200px;
+        width: 400px;
+        margin: auto;
+        margin-left: -3px;
+        display: grid;
+        grid-template-columns: auto auto;    
+    }
+    .para4{
+        background-color: green;
+        width: 180px;
+        height: 180px;
+    }
+    .fa-internet-explorer{
+        font-size: 80px;
+        padding: 5px 5px;
+        margin-top: 40px;
+        margin-left: 40px;
+        color: white;
+    }
+    .para5{
+        background-color: orangered;
+        width: 180px;
+        height: 180px;
+    }
+    .fa-question{
+        font-size: 80px;
+        padding: 5px 5px;
+        margin-top: 40px;
+        margin-left: 60px;
+        color: orangered;
+        border: 2px solid white;
+        background-color: white;
+    }
+    .box7{
+        height: 200px;
+        width: 200px; 
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: auto;
+        margin-left: -3px;
+        margin-top: -6px;
+    }
+    .para6{
+        background-image: url(flower\ pic.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        /* background-color: pink; */
+        width: 180px;
+        height: 180px;
+    }
+    .para7{
+        background-color: blue;
+        width: 200px;
+        height: 180px;
+    }
+    .fa-cloud{
+        font-size: 80px;
+        padding: 5px 5px;
+        margin-top: 40px;
+        margin-left: 40px;
+        color: white;
+    }
+    .box8{
+        background-color: green;   
+        width: 380px;
+        height: 190px;
+        margin-top: -8px;
+        margin-left: 6px;
+    }
+    .fa-store{
+        font-size: 80px;
+        padding: 5px 5px;
+        margin-top: 40px;
+        margin-left: 30px;
+        color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+        <div class="box1">
+            <h1>Jean Stone</h1>
+            <p>Thank you for your help!</p>
+            <p>It was great to have your help moving</p>
+            <h5>Mail</h5> 
+        </div>
+        <div class="box2">
+            <p class="para1">House warming party Jeans new house</p>
+            <p class="time">5:30 PM - 9:00 PM</p>  
+            <i class="fa-regular fa-calendar-days"></i>  
+            <p class="number">24</p>
+            <h3 class="mon">Monday</h3>
+        </div>
+        <div class="box3">
+            <p class="paraP"></p>
+            <p class="para3"><i class="fa-solid fa-circle-play"></i></p>
+            <p class="headPhone"><i class="fa-solid fa-headphones"></i></p>
+            <p class="gamePad"><i class="fa-solid fa-gamepad"></i></p>
+            <p class="camera"><i class="fa-solid fa-camera"></i></p>
+          
+        </div>
+        <div class="box4">
+            <p class="para"></p>
+            <p class="parab"></p>
+            <p class="headPhone1"></p>
+            <p class="gamePad1"></p>
+            <p class="camera1"></p>
+          
+        </div>
+        <div class="box5">
+            <p class="degree">68<sup>o</sup> </p>
+            <p class="sunny">San Francisco<br>Sunny</p>
+            <p>Today <br> 65*/52* Mostly sunny <br><br>  Tommorrow <br> 68*/53* Partly sunny</p>
+        </div>
+        <div class="box6">
+        <p class="para4"><i class="fa-brands fa-internet-explorer"></i></p>
+        <p class="para5"><i class="fa-solid fa-question"></i></p>
+    
+        </div>
+        <div class="box7">
+            <p class="para6"></p>
+            <p class="para7"><i class="fa-solid fa-cloud"></i></p>
+        </div>
+        <div class="box8"><i class="fa-solid fa-store"></i> </div>
+      
+
+
+    </div>
+</body>
+</html>
